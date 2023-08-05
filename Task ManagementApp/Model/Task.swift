@@ -16,12 +16,30 @@ struct Task: Identifiable {
 }
 
 var sampleTasks: [Task] = [
-    .init(taskTitle: "Record Video", creationDate: Date(), isComplete: true, tint: .red),
-    .init(taskTitle: "Redesign Website", creationDate: Date(), isComplete: true, tint: .red),
-    .init(taskTitle: "Go for a Walk", creationDate: Date(), isComplete: true, tint: .red),
-    .init(taskTitle: "Edit Video", creationDate: Date(), isComplete: true, tint: .red),
-    .init(taskTitle: "Publish Video", creationDate: Date(), isComplete: true, tint: .red),
-    .init(taskTitle: "Tweet about new Video!", creationDate: Date(), isComplete: true, tint: .red),
+    .init(taskTitle: "Record Video", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: -1,
+        to: Date()) ?? Date(), isComplete: true, tint: .yellow),
+    .init(taskTitle: "Redesign Website", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: 1,
+        to: Date()) ?? Date(), isComplete: false, tint: .cyan),
+    .init(taskTitle: "Go for a Walk", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: -2,
+        to: Date()) ?? Date(), isComplete: false, tint: .accentColor),
+    .init(taskTitle: "Edit Video", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: 2,
+        to: Date()) ?? Date(), isComplete: true, tint: .indigo),
+    .init(taskTitle: "Publish Video", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: 0,
+        to: Date()) ?? Date(), isComplete: false, tint: .mint),
+    .init(taskTitle: "Tweet about new Video!", creationDate: Calendar.current.date(
+        byAdding: .hour,
+        value: 3,
+        to: Date()) ?? Date(), isComplete: true, tint: .orange),
 ]
 
 extension Date {

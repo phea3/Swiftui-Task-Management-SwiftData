@@ -10,9 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
        Home()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .preferredColorScheme(.dark)
-           
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .preferredColorScheme(.dark)
     }
 }
 

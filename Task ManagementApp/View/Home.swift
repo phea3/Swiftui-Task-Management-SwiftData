@@ -10,9 +10,6 @@ import LocalAuthentication
 
 struct Home: View {
     @State private var currentDate: Date = .init()
-    private var symbols = ["keyboard", "hifispeaker.fill", "printer.fill", "tv.fill", "desktopcomputer", "headphones", "tv.music.note", "mic", "plus.bubble", "video"]
-
-    private var colors: [Color] = [.yellow, .purple, .green]
     @State private var isUnlocked = false
     private var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
@@ -100,7 +97,11 @@ struct Home: View {
                         
                         HStack(spacing: 10){
                             
-                            boxItems(IconName: "printer.fill")
+                            NavigationLink {
+                                ScannerView()
+                            } label: {
+                                boxItems(IconName: "printer.fill")
+                            }
                             
                             Rectangle()
                                 .fill(LinearGradient(gradient: Gradient(colors: [.white, .white, Color("bc")]), startPoint: .top, endPoint: .bottom))
@@ -113,8 +114,12 @@ struct Home: View {
                                 .fill(LinearGradient(gradient: Gradient(colors: [.white, .white, Color("bc")]), startPoint: .top, endPoint: .bottom))
                                 .frame(width: 1.0)
                                 .gridCellUnsizedAxes(.horizontal)
-                            
-                            boxItems(IconName: "keyboard")
+                            NavigationLink {
+                                Hometown()
+                            } label: {
+                                boxItems(IconName: "keyboard")
+                            }
+                           
                         }
                         
                     }
@@ -229,6 +234,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        ContentView()
     }
 }

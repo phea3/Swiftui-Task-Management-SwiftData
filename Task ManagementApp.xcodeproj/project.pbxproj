@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4292FB2A7365A700F55002 /* Hometown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4292FA2A7365A700F55002 /* Hometown.swift */; };
+		5C547B922A7A09DB00E137A3 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C547B912A7A09DB00E137A3 /* NewTaskView.swift */; };
+		5C5D6CB72A7499C100CBC978 /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D6CB62A7499C100CBC978 /* OffsetKey.swift */; };
+		5C5D6CB92A74F50E00CBC978 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D6CB82A74F50E00CBC978 /* TaskRowView.swift */; };
+		5C6CE3402A66185000E2099A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CE33F2A66185000E2099A /* ScannerView.swift */; };
+		5C6CE3432A661F8600E2099A /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CE3422A661F8600E2099A /* QRScanner.swift */; };
 		5C783C152A5FEB7400226E5B /* Task_ManagementAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C783C142A5FEB7400226E5B /* Task_ManagementAppApp.swift */; };
 		5C783C172A5FEB7400226E5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C783C162A5FEB7400226E5B /* ContentView.swift */; };
 		5C783C192A5FEB7500226E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C783C182A5FEB7500226E5B /* Assets.xcassets */; };
@@ -15,10 +21,18 @@
 		5C783C442A5FEE2400226E5B /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C783C432A5FEE2400226E5B /* View+Extensions.swift */; };
 		5C783C472A5FEF4800226E5B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C783C462A5FEF4800226E5B /* Home.swift */; };
 		5C783C492A5FF50300226E5B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C783C482A5FF50300226E5B /* Date+Extensions.swift */; };
+		5CA627022A790B0800D48ABB /* SwiftQRCodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA627012A790B0800D48ABB /* SwiftQRCodeScanner */; };
 		5CDE57062A6281B40038F1F2 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDE57052A6281B40038F1F2 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C4292FA2A7365A700F55002 /* Hometown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hometown.swift; sourceTree = "<group>"; };
+		5C547B912A7A09DB00E137A3 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		5C5D6CB62A7499C100CBC978 /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		5C5D6CB82A74F50E00CBC978 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		5C6CE33F2A66185000E2099A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		5C6CE3422A661F8600E2099A /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		5C6CE3442A66211800E2099A /* Task-ManagementApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Task-ManagementApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5C783C112A5FEB7400226E5B /* Task ManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task ManagementApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C783C142A5FEB7400226E5B /* Task_ManagementAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_ManagementAppApp.swift; sourceTree = "<group>"; };
 		5C783C162A5FEB7400226E5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,12 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA627022A790B0800D48ABB /* SwiftQRCodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C6CE3412A661F7900E2099A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5C6CE3422A661F8600E2099A /* QRScanner.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		5C783C082A5FEB7400226E5B = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +85,8 @@
 		5C783C132A5FEB7400226E5B /* Task ManagementApp */ = {
 			isa = PBXGroup;
 			children = (
+				5C6CE3442A66211800E2099A /* Task-ManagementApp-Info.plist */,
+				5C6CE3412A661F7900E2099A /* components */,
 				5CDE57042A62818F0038F1F2 /* Screens */,
 				5C783C452A5FEF3B00226E5B /* View */,
 				5C783C422A5FEDF800226E5B /* Helpers */,
@@ -96,6 +121,7 @@
 			children = (
 				5C783C432A5FEE2400226E5B /* View+Extensions.swift */,
 				5C783C482A5FF50300226E5B /* Date+Extensions.swift */,
+				5C5D6CB62A7499C100CBC978 /* OffsetKey.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -104,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				5C783C462A5FEF4800226E5B /* Home.swift */,
+				5C4292FA2A7365A700F55002 /* Hometown.swift */,
+				5C5D6CB82A74F50E00CBC978 /* TaskRowView.swift */,
+				5C547B912A7A09DB00E137A3 /* NewTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDE57052A6281B40038F1F2 /* KeyboardView.swift */,
+				5C6CE33F2A66185000E2099A /* ScannerView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -132,6 +162,9 @@
 			dependencies = (
 			);
 			name = "Task ManagementApp";
+			packageProductDependencies = (
+				5CA627012A790B0800D48ABB /* SwiftQRCodeScanner */,
+			);
 			productName = "Task ManagementApp";
 			productReference = 5C783C112A5FEB7400226E5B /* Task ManagementApp.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 5C783C082A5FEB7400226E5B;
+			packageReferences = (
+				5CA627002A790B0800D48ABB /* XCRemoteSwiftPackageReference "SwiftQRCodeScanner" */,
+			);
 			productRefGroup = 5C783C122A5FEB7400226E5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,12 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6CE3432A661F8600E2099A /* QRScanner.swift in Sources */,
 				5C783C172A5FEB7400226E5B /* ContentView.swift in Sources */,
+				5C6CE3402A66185000E2099A /* ScannerView.swift in Sources */,
 				5C783C442A5FEE2400226E5B /* View+Extensions.swift in Sources */,
+				5C4292FB2A7365A700F55002 /* Hometown.swift in Sources */,
 				5CDE57062A6281B40038F1F2 /* KeyboardView.swift in Sources */,
 				5C783C472A5FEF4800226E5B /* Home.swift in Sources */,
 				5C783C412A5FEBED00226E5B /* Task.swift in Sources */,
+				5C547B922A7A09DB00E137A3 /* NewTaskView.swift in Sources */,
 				5C783C152A5FEB7400226E5B /* Task_ManagementAppApp.swift in Sources */,
+				5C5D6CB72A7499C100CBC978 /* OffsetKey.swift in Sources */,
+				5C5D6CB92A74F50E00CBC978 /* TaskRowView.swift in Sources */,
 				5C783C492A5FF50300226E5B /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +362,10 @@
 				DEVELOPMENT_TEAM = Z68JPHB787;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Task-ManagementApp-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) would like to use your camera to scan QR codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow to access photo library";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -362,7 +407,10 @@
 				DEVELOPMENT_TEAM = Z68JPHB787;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Task-ManagementApp-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) would like to use your camera to scan QR codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow to access photo library";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -414,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CA627002A790B0800D48ABB /* XCRemoteSwiftPackageReference "SwiftQRCodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vinodiOS/SwiftQRCodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CA627012A790B0800D48ABB /* SwiftQRCodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CA627002A790B0800D48ABB /* XCRemoteSwiftPackageReference "SwiftQRCodeScanner" */;
+			productName = SwiftQRCodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C783C092A5FEB7400226E5B /* Project object */;
 }
